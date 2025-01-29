@@ -10,6 +10,9 @@ body {
 html::-webkit-scrollbar{
     width: 0.3rem;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* common for color green text */
 
@@ -412,18 +415,6 @@ h2 {
 }
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-    transform: none !important;
-    margin: 10px !important;
-     /* Stack cards on smaller screens */
-  }
-}
-
-/* popup-overlay */
-
 /* privacy policy */
 
 .popup-overlay {
@@ -678,4 +669,149 @@ footer{
     color: #27AE60 !important;
     margin-left: 30px;
     background-color: #2c343ceb !important;
+}
+
+/* Mobile & Tablet Responsiveness */
+
+/* Tablet */
+@media (max-width: 1024px) { 
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .img-fluid {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .abt img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .course .card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+  }
+
+  .course .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) { 
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .img-fluid {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .abt img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .course .card {
+    flex: 1 1 100%; /* One card per row */
+  }
+
+  .course .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) { 
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .img-fluid {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .abt img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .course .card {
+    flex: 1 1 100%; /* One card per row */
+  }
+
+  .course .card-body {
+    padding: 5px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+/* Video Background Responsive */
+@media (max-width: 1024px) {
+    .video-bg {
+        overflow-x: hidden;
+        width: 100vw;    
+        height: 100vh;   
+    }
+}
+  
+  /* For smaller devices (mobiles) */
+@media (max-width: 768px) {
+    .video-bg {
+        overflow-x: hidden;
+        width: 100vw;    
+        height: 100vh;   
+    }
+}
+  
+  /* For very small devices (small mobiles) */
+@media (max-width: 480px) {
+    .video-bg {
+        overflow-x: hidden;
+        width: 100vw;    
+        height: 100vh;   
+    }
+
 }
