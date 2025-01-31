@@ -139,14 +139,26 @@ section h3{
 section{
     color: whitesmoke;
     width: 100%;
-    align-items: center;
-    border-radius: 30px;
+    border-radius: 30px ;
     backdrop-filter: blur(15px);
-    margin-right: -30px;
 }
+
+.img-fluid{
+  width:50%;
+  margin-left: 30%;
+  display: flex;
+  
+}
+
+.container{
+  background-color:rgb(19, 18, 18);
+  border-radius: 30px;
+  backdrop-filter: blur(10%);
+}
+
 .img-fluid:hover{
-    transform: scale(1.4);
-    transition: 1.5s;
+  transform: rotateY(180deg);
+  transition: 1.5s;
 }
 
 
@@ -156,7 +168,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(5px);
 }
 
 .abt img{
@@ -175,19 +187,6 @@ section{
   background: linear-gradient(to bottom , rgb(18, 222, 18),rgb(146, 146, 254));
   -webkit-background-clip: text;
   color: transparent;
-}
-
-
-.abt .cont {
-    opacity: 0;
-}
-
-.abt:hover .cont{
-    position: relative;
-    opacity: 1;
-    color: rgb(215, 193, 51);
-    transition: 2s;
-    font-weight: 400;
 }
 
 .abt:hover p{
@@ -246,7 +245,7 @@ section{
     opacity: .2;
 }
 
-img:hover{
+.ac img:hover{
     opacity: 1;
     transition: 1.5s;
 }
