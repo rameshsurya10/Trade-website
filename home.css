@@ -33,31 +33,29 @@ html{
     opacity: .4;
 }
 
-/* .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-
-} */
-
 /* Navbar Styles */
 .navbar{
-    background: sticky!important;
-    width: 100%;
-    position: fixed !important;
-    top: 0%;
-    left: 0%;
-    font-weight: 600;
-    z-index: 2000 !important;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  box-shadow: 0 0 8px 7px #608165;
+  width: 30%;
+  border-radius: 50px;
+  position: fixed !important;
+  top: 2%;
+  left: 35%;
+  font-weight: 700;
+  z-index: 2000 !important;
+}
+
+.container-fluid{
+  margin: -10px;
+  margin-left: 3px;
 }
 
 .navbar-brand:hover{
     color: red !important;
-    transform: scale(1.2);
-    transition: 2.5s;
+    transition: 1.5s;
 
 }
 
@@ -76,17 +74,21 @@ html{
 
 .nav-link:hover{
     color: rgb(59, 194, 25) !important;
-    transform: scale(1.2);
     text-shadow: 0 0 20px whitesmoke;
-    transition: 2s;
+    transition: 1.5s;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     z-index: 2;
+    color: white;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     margin: 30px;
+}
+
+.hero .social-icon :hover{
+  color: #07ff8c;
 }
 
 .hero h1 {
@@ -98,7 +100,16 @@ html{
 .hero p {
     font-size: 1.2rem;
     font-weight: bold;
+    background: linear-gradient(to left , rgb(18, 222, 18),rgb(146, 146, 254));
+    -webkit-background-clip: text;
+    color: transparent;
     max-width: 600px;
+}
+
+.hero span{
+  background: linear-gradient(to top , rgb(18, 222, 18),rgb(146, 146, 254));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .hero button{
@@ -116,18 +127,13 @@ html{
     box-shadow: 0 0 5px 5px rgb(168, 224, 247);
 }
 
-/* Png */
+/* Quick about */
 
-.img-fluid{
-    width: 8rem;
-    height: 8rem;
-    margin: 25px;
-    padding-left :50px;
-    display: flex;
-    align-items: center;
-}
 section h3{
-    margin-left:10px;;
+    margin-left:10px;
+    background: linear-gradient(to right , rgb(18, 222, 18),rgb(146, 146, 254));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 section{
@@ -165,6 +171,12 @@ section{
     filter: drop-shadow(0px 30px 15px rgba(48, 47, 47, 0.8));
 }
 
+.ac h5{
+  background: linear-gradient(to bottom , rgb(18, 222, 18),rgb(146, 146, 254));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 
 .abt .cont {
     opacity: 0;
@@ -198,15 +210,10 @@ section{
     border-radius: 20px;
 }
 
-  
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-  
-/* .col-12 {
-    margin-bottom: 25px; 
-} */
   
 /* card */
 
@@ -222,9 +229,11 @@ section{
 }
 
 .card-body p{
-    color: rgb(94, 139, 167);
-    font-weight: 400;
-    font-size: large;
+  background: linear-gradient(to bottom , rgb(18, 222, 18),rgb(146, 146, 254));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  font-size: large;
 }
 .card:hover {
     transform: translateY(-10px);
@@ -239,6 +248,7 @@ section{
 
 img:hover{
     opacity: 1;
+    transition: 1.5s;
 }
   
 
@@ -295,7 +305,9 @@ img:hover{
 
 .course ul{
     opacity: 0;
-    color: #85f3ee;
+    background: linear-gradient(to left , rgb(18, 222, 18),rgb(196, 93, 93));
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: start;
 }
 
