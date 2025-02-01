@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INO TRADERS - Premium Trading</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="home.css">
@@ -24,11 +23,11 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark  px-2">
+   
+    <nav class="navbar navbar-expand-lg navbar-dark px-2 d-none d-lg-flex">
       <div class="container-fluid">
         <a class="navbar-brand" href="#Home"><span>I</span>NO <span>T</span>RADERS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,7 +36,7 @@
               <a class="nav-link active" aria-current="page" href="#About"><span>A</span>bout</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Courses"><Span>C</Span>ourses</a>
+              <a class="nav-link active" aria-current="page" href="#Courses"><span>C</span>ourses</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#FAQ"><span>F</span>AQ</a>
@@ -49,7 +48,8 @@
         </div>
       </div>
     </nav>
-  
+
+
   
     <!-- Hero Section -->
     <div class="hero d-flex flex-column justify-content-center align-items-center text-center text-white vh-100"
@@ -65,6 +65,8 @@
         <button onclick="location.href='#About'" data-aos="fade-right"
           class="btn btn-outline-success btn-lg mt-3 me-3">Explore
         </button>
+      </div>
+      <div>
         <button onclick="location.href='#Courses'" data-aos="fade-right"
           class="btn btn-outline-success btn-lg mt-3 me-3">Join Membership
         </button>
@@ -611,9 +613,8 @@
         <div class="row text-center text-lg-start">
           <div class="col-lg-4 col-md-12 mb-4">
             <h4 class="fw-bold">INO Trader™</h4>
-            <div class="social-icons mt-3">
-              <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
-              <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <div class="social-icons mt-3
+              <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
               <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
               <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
             </div>
@@ -632,446 +633,198 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <h5 class="fw-bold">Quick Links</h5>
             <ul class="list-unstyled mt-3">
-              <li><a href="#" class="text-decoration-none" id="privacy-policy-link">Privacy Policy</a></li>
-              <li><a href="#" class="text-decoration-none" id="terms-conditions-link">Terms and Conditions</a></li>
-              <li><a href="#" class="text-decoration-none" id="risk-disclosure-link">Responsible Risk Disclosure
-                  Policy</a></li>
-              <li><a href="#" class="text-decoration-none" id="refund-policy-link">Refund Policy</a></li>
-              <li><a href="#" class="text-decoration-none" id="disclaimer-link">Disclaimer</a></li>
+                <li><a href="#" class="text-decoration-none" id="privacy-policy-link" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></li>
+                <li><a href="#" class="text-decoration-none" id="terms-conditions-link" data-bs-toggle="modal" data-bs-target="#termsConditionsModal">Terms and Conditions</a></li>
+                <li><a href="#" class="text-decoration-none" id="risk-disclosure-link" data-bs-toggle="modal" data-bs-target="#riskDisclosureModal">Responsible Risk Disclosure Policy</a></li>
+                <li><a href="#" class="text-decoration-none" id="refund-policy-link" data-bs-toggle="modal" data-bs-target="#refundPolicyModal">Refund Policy</a></li>
+                <li><a href="#" class="text-decoration-none" id="disclaimer-link" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Disclaimer</a></li>
             </ul>
-          </div>
+        </div>
         </div>
   
         <div class="row text-center mt-4">
-          <div class="col-12 floa-start mb-0">
+          <div class="col-12 floa-start mb-0 ">
             <p class="mb-0"> &copy 2025 INO Trader™</p>
             <p class="mb-0">Powered by <span class="text-warning fw-bold">INO TRADERS</span>™</p>
           </div>
         </div>
       </div>
     </footer>
-  
-    <!-- Popup overlay -->
-  
-    <!-- Privacy-Policy -->
-  
-    <div class="popup-overlay">
-      <div class="privacy-policy" id="privacy-policy">
-        <section>
-          <h1>Privacy Policy</h1>
-          <p><strong>Last Updated:</strong> 28 January 2025</p>
-  
-          <p>This Privacy Policy outlines how personal information is collected, used, and disclosed by Ino Traders ("we,"
-            "us," or "our") in connection with your use of
-            <a href="https://inotraders.in/" target="_blank">https://inotraders.in/</a> (the "Website"). By using the
-            Website, you agree to the terms and practices described in this policy.
-          </p>
-  
-          <h2>1. Information We Collect</h2>
-          <h3>1.1 Personal Information</h3>
-          <p><strong>What We Collect:</strong> When you register for an account, subscribe to our services, or make a
-            purchase, we collect personal information such as:</p>
+
+    
+    
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>1. Introduction</h6>
+          <p>At INO Trader™, we respect your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website or use our services.</p>
+    
+          <h6>2. Information We Collect</h6>
           <ul>
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Payment details</li>
-            <li>Geographic location</li>
-            <li>Trading preferences</li>
+            <li>Personal Information: Name, email address, contact details, etc.</li>
+            <li>Payment Details: Credit card information, transaction history.</li>
+            <li>Technical Data: IP address, browser type, and website usage data through cookies.</li>
           </ul>
-  
-          <h3>1.2 Log Data</h3>
-          <p><strong>What We Collect:</strong> Automatically gathered information includes:</p>
+    
+          <h6>3. How We Use Your Information</h6>
           <ul>
-            <li>IP address</li>
-            <li>Browser type and version</li>
-            <li>Pages visited</li>
-            <li>Time and date of visit</li>
-            <li>Behavioral patterns on the Website</li>
+            <li>To process transactions and manage payments.</li>
+            <li>To send updates and marketing materials (if opted-in).</li>
+            <li>To improve user experience and website functionality.</li>
           </ul>
-  
-          <h3>1.3 Additional Data</h3>
-          <p><strong>Optional Data for Enhanced Personalization:</strong></p>
-          <ul>
-            <li>Demographic details such as age and gender</li>
-            <li>Training and trading history</li>
-          </ul>
-  
-          <h2>2. How We Use Your Information</h2>
-          <h3>2.1 Personal Information</h3>
-          <ul>
-            <li>To provide, manage, and enhance our services, including personalized recommendations and trading insights.
-            </li>
-            <li>For processing transactions and delivering updates on account activity or promotional offers.</li>
-          </ul>
-  
-          <h3>2.2 Log Data</h3>
-          <ul>
-            <li>To analyze user behavior, improve Website performance, and develop tailored training programs.</li>
-          </ul>
-  
-          <h3>2.3 Additional Data</h3>
-          <ul>
-            <li>For delivering customized educational content, optimizing user experience, and creating targeted
-              advertising campaigns.</li>
-          </ul>
-  
-          <h2>3. Cookies and Similar Technologies</h2>
-          <h3>3.1 Cookies</h3>
-          <p>Ino Traders uses cookies to track user behavior and enhance site navigation. Advanced AI-based cookies may
-            also be employed to customize marketing efforts.</p>
-          <p><strong>User Options:</strong> You may configure your browser to decline cookies or alert you when cookies
-            are being used.</p>
-  
-          <h2>4. Third-Party Services</h2>
-          <h3>4.1 Payment Processing</h3>
-          <p>Payments are securely handled through third-party gateways. Ino Traders does not store payment details on its
-            servers.</p>
-  
-          <h3>4.2 Analytics</h3>
-          <p>We use advanced third-party analytics tools to gain insights into user behavior and optimize services.</p>
-  
-          <h3>4.3 Security Enhancements</h3>
-          <p>Blockchain-based tracking systems are implemented to ensure transparency and security for all financial
-            transactions.</p>
-  
-          <h2>5. Security</h2>
-          <h3>5.1 Measures Implemented</h3>
-          <ul>
-            <li>Data encryption via TLS/SSL</li>
-            <li>Multi-factor authentication, including optional biometric login</li>
-            <li>Regular audits to identify and address vulnerabilities</li>
-          </ul>
-  
-          <h2>6. Your Choices</h2>
-          <p><strong>Access and Updates:</strong> Manage your account information, preferences, and trading history by
-            logging into your profile.</p>
-          <p><strong>Opt-Out Options:</strong> Easily unsubscribe from newsletters or marketing emails through the
-            unsubscribe link provided in our communications.</p>
-  
-          <h2>7. Changes to This Privacy Policy</h2>
-          <p>We may revise this Privacy Policy to remain compliant with regulatory standards or improve our practices. The
-            most recent version will always be available on this page, accompanied by the "Last Updated" date.</p>
-  
-          <h2>8. Contact Us</h2>
-          <p>For privacy-related questions or concerns, you may contact us:</p>
-          <ul>
-            <li>Email: <a href="mailto:privacy@inotraders.in">privacy@inotraders.in</a></li>
-            <li>Live Chat: Available on our Website</li>
-          </ul>
-        </section>
+    
+          <h6>4. Cookies and Tracking Technologies</h6>
+          <p>We use cookies to collect data about website usage to improve your experience. You can disable cookies, but this may limit some website functionality.</p>
+    
+          <h6>5. Data Sharing</h6>
+          <p>We may share your information with third-party service providers like payment processors and hosting companies. These partners are only allowed to use your data to provide the services they offer us.</p>
+    
+          <h6>6. Security</h6>
+          <p>We take appropriate measures to safeguard your personal information, but no method of transmission over the Internet or electronic storage is completely secure.</p>
+    
+          <h6>7. Changes to Privacy Policy</h6>
+          <p>We may update this Privacy Policy from time to time. You will be notified of any changes via email or through our website.</p>
+        </div>
       </div>
     </div>
-  
-    <!-- Popup-overlay-2 -->
-    <!-- Terms & Conditions -->
-  
-    <div class="popup-overlay-2">
-      <div class="terms-conditions" id="terms-conditions">
-        <section>
-          <h1>Terms and Conditions</h1>
-          <p><strong>Last Updated:</strong> 28 January 2025</p>
-  
-          <p>This Privacy Policy outlines how personal information is collected, used, and disclosed by Ino Traders ("we,"
-            "us," or "our") in connection with your use of
-            <a href="https://inotraders.in/" target="_blank">https://inotraders.in/</a> (the "Website"). By using the
-            Website, you agree to the terms and practices described in this policy.
-          </p>
-  
-          <h2>1. Information We Collect</h2>
-          <h3>1.1 Personal Information</h3>
-          <p><strong>What We Collect:</strong> When you register for an account, subscribe to our services, or make a
-            purchase, we collect personal information such as:</p>
+    </div>
+    
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="termsConditionsModal" tabindex="-1" aria-labelledby="termsConditionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="termsConditionsModalLabel">Terms and Conditions</h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>1. Agreement</h6>
+          <p>By using INO Trader™ services, you agree to comply with these Terms and Conditions. If you disagree with any part of these terms, you should not access our website.</p>
+    
+          <h6>2. Eligibility</h6>
+          <p>You must be at least 18 years old to register for and use our services.</p>
+    
+          <h6>3. License</h6>
+          <p>We grant you a limited, non-exclusive license to access and use the content on the website for personal use only.</p>
+    
+          <h6>4. Account Responsibility</h6>
+          <p>You are responsible for maintaining the confidentiality of your account details, including your username and password.</p>
+    
+          <h6>5. Prohibited Activities</h6>
           <ul>
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Payment details</li>
-            <li>Geographic location</li>
-            <li>Trading preferences</li>
+            <li>Unauthorized access to our systems</li>
+            <li>Use of the website for illegal purposes</li>
+            <li>Transmission of malware or viruses.</li>
           </ul>
-  
-          <h3>1.2 Log Data</h3>
-          <p><strong>What We Collect:</strong> Automatically gathered information includes:</p>
-          <ul>
-            <li>IP address</li>
-            <li>Browser type and version</li>
-            <li>Pages visited</li>
-            <li>Time and date of visit</li>
-            <li>Behavioral patterns on the Website</li>
-          </ul>
-  
-          <h3>1.3 Additional Data</h3>
-          <p><strong>Optional Data for Enhanced Personalization:</strong></p>
-          <ul>
-            <li>Demographic details such as age and gender</li>
-            <li>Training and trading history</li>
-          </ul>
-  
-          <h2>2. How We Use Your Information</h2>
-          <h3>2.1 Personal Information</h3>
-          <ul>
-            <li>To provide, manage, and enhance our services, including personalized recommendations and trading insights.
-            </li>
-            <li>For processing transactions and delivering updates on account activity or promotional offers.</li>
-          </ul>
-  
-          <h3>2.2 Log Data</h3>
-          <ul>
-            <li>To analyze user behavior, improve Website performance, and develop tailored training programs.</li>
-          </ul>
-  
-          <h3>2.3 Additional Data</h3>
-          <ul>
-            <li>For delivering customized educational content, optimizing user experience, and creating targeted
-              advertising campaigns.</li>
-          </ul>
-  
-          <h2>3. Cookies and Similar Technologies</h2>
-          <h3>3.1 Cookies</h3>
-          <p>Ino Traders uses cookies to track user behavior and enhance site navigation. Advanced AI-based cookies may
-            also be employed to customize marketing efforts.</p>
-          <p><strong>User Options:</strong> You may configure your browser to decline cookies or alert you when cookies
-            are being used.</p>
-  
-          <h2>4. Third-Party Services</h2>
-          <h3>4.1 Payment Processing</h3>
-          <p>Payments are securely handled through third-party gateways. Ino Traders does not store payment details on its
-            servers.</p>
-  
-          <h3>4.2 Analytics</h3>
-          <p>We use advanced third-party analytics tools to gain insights into user behavior and optimize services.</p>
-  
-          <h3>4.3 Security Enhancements</h3>
-          <p>Blockchain-based tracking systems are implemented to ensure transparency and security for all financial
-            transactions.</p>
-  
-          <h2>5. Security</h2>
-          <h3>5.1 Measures Implemented</h3>
-          <ul>
-            <li>Data encryption via TLS/SSL</li>
-            <li>Multi-factor authentication, including optional biometric login</li>
-            <li>Regular audits to identify and address vulnerabilities</li>
-          </ul>
-  
-          <h2>6. Your Choices</h2>
-          <p><strong>Access and Updates:</strong> Manage your account information, preferences, and trading history by
-            logging into your profile.</p>
-          <p><strong>Opt-Out Options:</strong> Easily unsubscribe from newsletters or marketing emails through the
-            unsubscribe link provided in our communications.</p>
-  
-          <h2>7. Changes to This Privacy Policy</h2>
-          <p>We may revise this Privacy Policy to remain compliant with regulatory standards or improve our practices. The
-            most recent version will always be available on this page, accompanied by the "Last Updated" date.</p>
-  
-          <h2>8. Contact Us</h2>
-          <p>For privacy-related questions or concerns, you may contact us:</p>
-          <ul>
-            <li>Email: <a href="mailto:privacy@inotraders.in">privacy@inotraders.in</a></li>
-            <li>Live Chat: Available on our Website</li>
-          </ul>
-        </section>
+    
+          <h6>6. Termination</h6>
+          <p>We reserve the right to suspend or terminate your account for any violation of these terms.</p>
+    
+          <h6>7. Modifications</h6>
+          <p>We can modify or update the terms at any time, and the changes will be reflected on this page. It’s your responsibility to review these regularly.</p>
+        </div>
       </div>
     </div>
-  
-    <!-- popup-overlay-3 -->
-    <!-- risk-disclosure -->
-  
-    <div class="popup-overlay-3">
-      <div class="risk-disclosure" id="risk-disclosure">
-        Responsible Risk Disclosure Policy
-  
-        Risk Disclosure
-  
-        Last Updated: 18 November 2023
-  
-        Before engaging in any trading or investment activities on [https://inotraders.in/] (the "Website"), please
-        carefully consider the following risk disclosure:
-  
-        Financial Risk
-  
-        Trading and investment activities involve a substantial risk of loss and are not suitable for everyone. The value
-        of investments may go up as well as down, and past performance is not indicative of future results.
-  
-        Market Risk
-  
-        Financial markets are subject to various factors, including economic conditions, geopolitical events, and market
-        sentiment. These factors can impact the prices of financial instruments, leading to potential financial loss.
-  
-        Volatility Risk
-  
-        Financial markets can be highly volatile, and prices can fluctuate rapidly. Sudden and significant price movements
-        may occur, and traders or investors may not be able to execute orders at desired prices.
-  
-        Leverage Risk
-  
-        The use of leverage in trading or investing can amplify both potential gains and losses. It is important to
-        understand the risks associated with leverage and use it cautiously.
-  
-        Risk of Loss of Capital
-  
-        There is a risk of losing all the capital invested. It is crucial to only trade or invest with funds that you can
-        afford to lose.
-  
-        No Guarantee of Profit
-  
-        There is no guarantee that any trading strategy, investment approach, or financial product will be successful.
-        Profitability depends on various factors, including market conditions and individual decision-making.
-  
-        Regulatory and Legal Risks
-  
-        Trading activities are subject to regulatory and legal requirements that may vary by jurisdiction. Users are
-        responsible for understanding and complying with applicable laws and regulations.
-  
-        Technology and Connectivity Risks
-  
-        The Website relies on technology and internet connectivity. Technical issues, system failures, or disruptions may
-        occur, affecting the ability to access the Website or execute trades.
-  
-        Educational Content
-  
-        The educational content provided on the Website is for informational purposes only and does not constitute
-        financial advice. Users are encouraged to seek advice from qualified financial professionals.
-  
-        No Liability for Losses
-  
-        INO Traders, the owner of the Website, and the Website itself shall not be liable for any losses, damages, or
-        expenses arising from your use of or reliance on the information provided.
-  
-        Acknowledgment
-  
-        By using the Website, you acknowledge that you have read, understood, and accepted the risks associated with
-        trading and investing.
-  
-        Contact Information
-  
-        If you have any questions about this Risk Disclosure Policy, please contact INO Traders at inotraders@gmail.com.
+    </div>
+    <!-- Responsible Risk Disclosure Policy Modal -->
+    <div class="modal fade" id="riskDisclosureModal" tabindex="-1" aria-labelledby="riskDisclosureModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="riskDisclosureModalLabel">Responsible Risk Disclosure Policy</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>1. Introduction</h6>
+            <p>Trading binary options is risky. You may lose all of your invested capital. This policy outlines the risks involved in binary trading and emphasizes the need for careful consideration before engaging in trading activities.</p>
+    
+            <h6>2. Risk Involved</h6>
+            <ul>
+              <li>Market volatility can lead to losses, especially for inexperienced traders.</li>
+              <li>Leverage and margin requirements amplify both potential gains and losses.</li>
+              <li>Understanding risk management strategies is crucial to limit losses.</li>
+            </ul>
+    
+            <h6>3. Advice</h6>
+            <p>We strongly advise users to trade only with capital that they can afford to lose. Ensure you understand the risks before proceeding, and consider seeking professional advice if necessary.</p>
+    
+            <h6>4. Risk Management</h6>
+            <p>We recommend implementing stop-loss strategies and setting appropriate risk limits for all trades. Always trade responsibly.</p>
+    
+            <h6>5. Disclaimer</h6>
+            <p>This policy does not guarantee any profits. It merely outlines the possible risks involved in binary options trading.</p>
+          </div>
+        </div>
       </div>
     </div>
-  
-    <!-- popup-overlay-4 -->
-    <!-- refund-policy -->
-  
-    <div class="popup-overlay-4">
-      <div class="refund-policy" id="refund-policy">
-        Refund Policy
-  
-        Eligibility for a Refund
-  
-        Refunds for INO Traders courses and services are subject to the following strict criteria:
-  
-        Class Attendance Requirement: Refunds are not available if you have attended any class or session, either live or
-        recorded, as attendance demonstrates engagement with our course materials.
-  
-        Timeframe for Refund Requests: Refund requests must be made within 32 days of payment. Refunds will not be
-        processed after this period under any circumstances.
-  
-        Initial Grace Period: Refund requests made within the first 3 days after payment will be considered, provided you
-        have not accessed any course materials or attended any classes. Once this period passes, the refund eligibility
-        will be subject to the conditions outlined above.
-  
-        Non-Engagement Clause: If you do not attend any class or access any course materials during the entire course
-        duration, you are not eligible for a refund.
-  
-        Community and Coursework Participation: Active participation in our community platforms, coursework, exercises,
-        and assignments will be reviewed as part of the refund eligibility process. Failure to meet engagement standards
-        does not constitute grounds for a refund.
-  
-        How to Request a Refund
-  
-        To request a refund, please follow these steps:
-  
-        Contact our customer support team at manager@inotraders.in.
-  
-        Provide your full name, payment proof, and a detailed explanation of your refund request.
-  
-        Our team will review your request to verify if you meet the eligibility criteria outlined in this policy.
-  
-        Refund Process
-  
-        If your refund request is approved, we will process the refund using the same payment method you used for the
-        original purchase.
-  
-        Refunds may take several days to appear in your account, depending on your payment provider’s processing times.
-  
-        Approved refunds will be issued within seven business days of confirmation.
-  
-        Changes to this Refund Policy
-  
-        INO Traders reserves the right to modify or amend this Refund Policy at any time. Any changes will take effect
-        immediately upon posting on our website. Please check this page periodically for updates.
-  
-        By purchasing our courses or services, you acknowledge and agree to the terms and conditions outlined in this
-        Refund Policy.
-  
-        Thank you for choosing INO Traders for your trading education needs. We value your commitment to learning and look
-        forward to supporting your success.
+    
+    <!-- Refund Policy Modal -->
+    <div class="modal fade" id="refundPolicyModal" tabindex="-1" aria-labelledby="refundPolicyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="refundPolicyModalLabel">Refund Policy</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>1. Refund Eligibility</h6>
+            <p>Refunds will only be issued within 48 hours of payment. If the class has been attended, no refunds will be issued under any circumstances.</p>
+    
+            <h6>2. Refund Request Process</h6>
+            <ul>
+              <li>Refund requests must be submitted within 48 hours of payment.</li>
+              <li>You must provide proper proof (payment receipt and reason for request) for a refund to be considered.</li>
+              <li>No refunds will be provided if the training session or course has been accessed or attended.</li>
+            </ul>
+    
+            <h6>3. Approval Process</h6>
+            <p>All refund requests are subject to approval. After the request is made, the verification process may take up to 7 working days to be completed.</p>
+    
+            <h6>4. Exceptions</h6>
+            <p>Refunds may not be granted in cases where the user has violated the website's terms and conditions or engaged in fraudulent activities.</p>
+          </div>
+        </div>
       </div>
     </div>
-  
-    <!-- popup-overlay-5 -->
-    <!-- disclaimer -->
-  
-    <div class="popup-overlay-5">
-      <div class="disclaimer" id="disclaimer">
-        Disclaimer
-  
-        Last Updated: 18 November 2023
-  
-        No Financial Advice
-  
-        The content provided on [https://inotraders.in/] (the "Website") is for informational purposes only and does not
-        constitute financial advice. INO Traders, the owner of the Website, is not a financial advisor, and the
-        information provided should not be considered as professional financial advice.
-  
-        Educational Purposes
-  
-        The trading courses and materials offered on the Website are designed for educational purposes only. INO Traders
-        does not guarantee any specific results or outcomes from the use of this educational content.
-  
-        Risk of Trading
-  
-        Trading involves a high level of risk, and past performance is not indicative of future results. Individuals
-        should carefully consider their financial situation and consult with a financial advisor before engaging in any
-        trading activities.
-  
-        No Endorsement of Products or Services
-  
-        Any mention of third-party products, services, or websites on the Website does not constitute an endorsement or
-        recommendation. INO Traders is not responsible for the quality, accuracy, or reliability of third-party products
-        or services.
-  
-        Accuracy of Information
-  
-        While we strive to provide accurate and up-to-date information, INO Traders makes no representations or warranties
-        of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with
-        respect to the Website or the information, products, services, or related graphics contained on the Website.
-  
-        Changes to the Website
-  
-        INO Traders reserves the right to modify, suspend, or discontinue any aspect of the Website at any time without
-        notice. We do not guarantee that the Website will be available, error-free, or uninterrupted.
-  
-        External Links
-  
-        The Website may contain links to external websites that are not provided or maintained by INO Traders. We do not
-        guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
-  
-        Limitation of Liability
-  
-        INO Traders and the Website shall not be liable for any loss or damage, including but not limited to direct,
-        indirect, incidental, consequential, or punitive damages, arising from your use of or access to the Website.
-  
-        Governing Law
-  
-        This Disclaimer and any disputes related to your use of the Website shall be governed by and construed in
-        accordance with the laws of the jurisdiction where INO Traders is registered.
-  
-        Contact Information
-  
-        If you have any questions about this Disclaimer, please contact INO Traders at inotraders@gmail.com.
+    
+    <!-- Disclaimer Modal -->
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>1. No Guarantee of Profits</h6>
+            <p>INO Trader™ does not guarantee any specific profits from using our services or engaging in binary options trading. Trading is inherently risky, and past performance is not indicative of future results.</p>
+    
+            <h6>2. Educational Purpose</h6>
+            <p>All content provided is for educational purposes only. We do not offer investment advice, and users are encouraged to make informed decisions based on their own research and judgment.</p>
+    
+            <h6>3. Limitation of Liability</h6>
+            <p>INO Trader™ will not be held responsible for any financial losses, including but not limited to losses caused by market fluctuations, trading decisions, or any other factors outside our control.</p>
+    
+            <h6>4. Independent Responsibility</h6>
+            <p>Users are solely responsible for any trades made and the financial risks associated with them. It is important to have proper risk management strategies in place.</p>
+    
+            <h6>5. Modifications</h6>
+            <p>INO Trader™ reserves the right to modify or change this disclaimer at any time without prior notice. All changes will be reflected on this page, and it is the user's responsibility to review it regularly.</p>
+          </div>
+        </div>
       </div>
     </div>
+
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="home.js"></script>
     <script>
